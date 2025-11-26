@@ -1,0 +1,3 @@
+kubectl version –client 
+kubectl cluster-info 
+kubectl get nodes
