@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: python-demo-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: python-demo
+        image: python-demo
+        imagePullPolicy: Never
+        command: ["python"]
+        args: ["app.py"]
+      restartPolicy: Never
