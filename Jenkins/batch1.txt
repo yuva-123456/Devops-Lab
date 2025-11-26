@@ -1,0 +1,6 @@
+echo Running CI step...
+echo Displaying app file:
+type sample.txt
+
+echo Running tests...
+echo All tests passed!

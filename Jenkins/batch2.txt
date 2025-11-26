@@ -1,0 +1,3 @@
+echo Deploying...
+copy sample.txt C:\deploy\sample.txt /Y
+echo Deployment complete.
