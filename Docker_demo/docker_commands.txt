@@ -1,0 +1,10 @@
+docker --version
+docker run -d --name demo busybox sh -c "while true; do echo Hello; sleep 5; done"
+docker ps
+echo "Welcome to Docker!" > message.txt
+docker container cp message.txt demo:/tmp/message.txt
+docker exec demo cat /tmp/message.txt
+docker container cp demo:/etc/group .
+docker container inspect demo
+docker container export demo > demo-backup.tar
+docker stop demo
