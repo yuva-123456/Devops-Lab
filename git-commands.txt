@@ -1,0 +1,35 @@
+Explore Git and GitHub Commands:
+
+Aim
+
+To explore basic Git and GitHub commands used for source code management and collaboration.
+
+Requirements
+
+Git installed on the system
+GitHub account
+Internet connection
+Any code editor / terminal
+
+Git: A distributed version control system used to track changes in source code.
+
+GitHub: A cloud-based hosting platform for Git repositories that helps in sharing code and collaborating with others.
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git init
+git status
+git add filename        # add specific file
+git add .               # add all files
+git commit -m "Initial commit"
+git log
+git branch feature1       # create branch
+git checkout feature1     # switch to branch
+git switch -c feature1    # create + switch
+git checkout main         # go to main/master
+git merge feature1        # merge changes
+git remote add origin https://github.com/username/devops-lab.git
+git push -u origin main      # first time
+git push                     # next times
+git clone https://github.com/username/devops-lab.git
+git pull origin main
